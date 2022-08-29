@@ -1,8 +1,8 @@
 const lib = require("./pdf_lib_facade");
 const path = require("path");
 
-const FONT_PATH = path.join(__dirname, "../data/cordianew.ttf");
-const FONT_BOLD_PATH = path.join(__dirname, "../data/cordianew_bold.ttf");
+const FONT_PATH = path.join(__dirname, "..","data","cordianew.ttf");
+const FONT_BOLD_PATH = path.join(__dirname, "..","data","cordianew_bold.ttf");
 
 exports.correctFile = async (inputPath, outputPath) => {
 	var doc = await lib.readPdf(inputPath);
